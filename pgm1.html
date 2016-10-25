@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+var die;
+var indication=1;
+var time=1;
+var pad=10;
+$(document).ready(function(){
+$("#div1").click(function(){
+
+die=Math.floor((Math.random() * 6) + 1);
+var y="dis"+die+".png";
+$("#imgdie").attr("src", y);
+if(indication == 1){
+$("#man").attr("src","walkman.gif")
+for(var i=0;i<die*2;i++){
+$("#man").animate({left:"+=10px"},200);
+}
+setInterval(function(){ $("#man").attr("src","man.gif")}, 200*die*2);
+indication--;
+}
+else
+{
+$("#gh").attr("src","walkghost.gif");
+for(var i=0;i<die*2;i++){
+$("#gh").animate({left:"+=10px"},200);
+}
+setInterval(function(){ $("#gh").attr("src","gh.png") }, 200*die*2);
+indication++;
+}
+
+});
+});
+</script>
+</head>
+<body>
+<div style="height:40%;width:100%;float:left;padding-left:40%;" id="div1">
+<img src="dis1.png" id="imgdie" height="160" width="160">
+</div>
+<img src="gh.png" id="gh" style="position:absolute;top:48%;left:50px;">
+<img src="man.gif" id="man" style="position:absolute;top:50%;left:200px">
+
+</body>
+</html>
