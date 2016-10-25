@@ -1,0 +1,87 @@
+.home-container{
+  background: url(../images/bg.jpg);
+  height: 608px;
+  width: 800px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.container{
+  margin: 20px auto;
+  position: relative;
+  width: 320px;
+  height: 300px;
+  top: 180px;
+  left: -70px;
+}
+.center{
+  text-align: center;
+}
+.btn{
+  width: 120px;
+  height: 40px;
+  background: #008089;
+  color: #fff;
+  box-shadow: 1px 1px 3px #666;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.text-box{
+  height: 35px;
+  width: 50px;
+  padding-left: 20px
+}
+.cell{
+  height: 50px;
+  width: 50px;
+  border: 1px dashed #773d1f;
+  float: left;
+  margin: 1px;
+}
+.clearfix{
+  clear: both;
+}
+.item{
+  margin-top: 5px;
+}
+.tom{
+  margin-top: 0;
+  height: 50px;
+  width: 45px;
+}
+.jerry{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: url(../images/Jerrylaughs.gif);
+  background-size: 100% 100%;
+}
+.jerry.running{
+  background: url(../images/jerryRunning.gif);
+  background-size: 100% 100%;
+}
+.notify{
+ text-align: center;
+ font-size: 49px;
+ display: none;
+ font-family: sans-serif;
+ top: 60px;
+ position: absolute;
+ width: 100%;
+ left: -85px;
+}
+.notify-success{
+  color: #46e662;
+  text-shadow: 3px 3px 4px #69cb7a;
+}
+.notify-failed{
+  color: #f00;
+  text-shadow: 3px 3px 4px #d1664e;
+}
+.notify-failed a{
+  color: #c1e020;
+  width: 100%;
+  display: block;
+  font-size: 27px;
+}
